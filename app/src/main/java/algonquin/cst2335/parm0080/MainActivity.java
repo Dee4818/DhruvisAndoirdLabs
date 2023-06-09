@@ -17,7 +17,7 @@ Switch sw;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        imgView = findViewById(R.id.imageView);
+        imgView = findViewById(R.id.imageView2);
         sw = findViewById(R.id.spin_switch);
 
         sw.setOnCheckedChangeListener((btn,isChecked) -> {
