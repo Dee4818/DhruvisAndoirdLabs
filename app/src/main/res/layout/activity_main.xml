@@ -4,7 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteX="48dp"
+    tools:layout_editor_absoluteY="27dp">
+
 
 
     <TextView
@@ -14,9 +17,7 @@
         android:layout_marginTop="188dp"
         android:text="Type your Password:"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.528"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintHorizontal_bias="0.528"/>
 
     <EditText
         android:id="@+id/editText"
@@ -42,5 +43,3 @@
         app:layout_constraintTop_toBottomOf="@+id/editText"
         app:layout_constraintVertical_bias="0.911" />
 
-
-</androidx.constraintlayout.widget.ConstraintLayout>

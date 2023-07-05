@@ -101,5 +101,24 @@ public class MainActivity extends AppCompatActivity {
             default:
                 return false;
         }
+
+        imgView = findViewById(R.id.imageView2);
+        sw = findViewById(R.id.spin_switch);
+
+        sw.setOnCheckedChangeListener((btn,isChecked) -> {
+            if (isChecked) {
+                RotateAnimation rotate = new RotateAnimation(0, 360, Animation.RELATIVE_TO_SELF, 0.5f, Animation.RELATIVE_TO_SELF, 0.5f);
+                rotate.setDuration(5000);
+                rotate.setRepeatCount(Animation.INFINITE);
+                rotate.setInterpolator(new LinearInterpolator());
+
+                imgView.startAnimation(rotate);
+            }
+                else {
+                imgView.clearAnimation();
+
+            }
+
+        });
     }
 }

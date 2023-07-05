@@ -3,5 +3,9 @@
     <string name="app_name">Dhruvi\'s Andoird Labs</string>
     <string name="hello_message">Kya hal hai duniya ke</string>
     <string name="button_message">Me ek button hu</string>
+    <string name="spin_message" />
+    <string name="button1">Pehla button</string>
+    <string name="button2">Dusra button </string>
+    <string name="button3">Teesra button</string>
 
 </resources>
