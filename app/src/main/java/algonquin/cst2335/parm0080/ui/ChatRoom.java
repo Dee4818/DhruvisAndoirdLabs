@@ -129,13 +129,12 @@ public class ChatRoom extends AppCompatActivity {
                 AlertDialog.Builder builder = new AlertDialog.Builder(itemView.getContext());
                 builder.setMessage("Do you want to delete this message: "+ messageText.getText());
                 builder.setTitle("Question: ");
+                builder.setNegativeButton("NO", ((dialog, which) -> {}));
                 builder.setPositiveButton("Yes", ((dialog, which) -> {
 
                     messages.remove(position);
                     myAdapter.notifyItemInserted(position);
                 }));
-
-                builder.setNegativeButton("NO", ((dialog, which) -> {}));
                 builder.create().show();
             });
             messageText = itemView.findViewById(R.id.messageText);
