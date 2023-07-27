@@ -17,11 +17,11 @@ public class ChatMessage {
     @ColumnInfo(name="SendOrReceive")
     protected boolean isSentButton;
 
-    public ChatMessage(String m, String t, boolean sent)
+    public ChatMessage(String message, String timeSent, boolean isSentButton)
     {
-        message = m;
-        timeSent = t;
-        isSentButton = sent;
+      this.message = message;
+        this.timeSent= timeSent;
+        this.isSentButton= isSentButton;
     }
 
     public void setMessage(String message) {
